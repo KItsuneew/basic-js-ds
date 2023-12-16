@@ -10,10 +10,10 @@ class Queue {
   }
 
   enqueue(value) {
-    const node = new ListNode(value); // {value: value, next: null}
+    const node = new ListNode(value);
 
-    if (this.list == undefined) this.list = node; //{5  {6 {7 null}
-    else { // тут нужно до хвоста дойти и добавить в хвост его
+    if (this.list == undefined) this.list = node;
+    else {
       let current = this.list;
 
       while (current.next != null) {
